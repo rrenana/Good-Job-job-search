@@ -13,6 +13,7 @@ int main()
 	printf("enjoy?\n");
 	printf("thank you hashem!\n");
 	printf("somthing no good!\n");
+	printf("thank you hashem!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1\n");
 	
 	
 
