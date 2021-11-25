@@ -1,9 +1,9 @@
 #include<stdio.h>
 int main()
 {
-	printf("good luck!");
-	printf("hey");
-	printf("second side");
+	printf("good luck!\n");
+	printf("hey\n");
+	printf("second side\n");
 	printf("esty\n");
 	printf("malky\n");
 	printf("rotshild\n");
