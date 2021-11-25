@@ -6,6 +6,7 @@ int main()
 	printf("second side");
 	printf("esty\n");
 	printf("malky\n");
+	printf("rotshild\n");
 
 
 
