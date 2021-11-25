@@ -12,6 +12,9 @@ int main()
 	printf("Renana?\n");
 	printf("enjoy?\n");
 	printf("thank you hashem!\n");
+	printf("somthing no good!\n");
+	
+	
 
 	
 
