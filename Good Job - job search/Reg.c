@@ -17,7 +17,7 @@ struct Employee
 	int age;
 	int phone_number;
 	int password;
-	char Email[15];
+	char Email[25];
 	char living_area[5];
 	char Driving_License[5];
 	char Education_level[N];
