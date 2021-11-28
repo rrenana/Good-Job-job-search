@@ -3,7 +3,7 @@
 #include<stdlib.h>
 #include<string.h>
 #define N 30
-#define M 10//ëì îòñé÷ éåëì ìäåñéó òã 10 îùøåú
+#define M 10//Ã«Ã¬ Ã®Ã²Ã±Ã©Ã· Ã©Ã¥Ã«Ã¬ Ã¬Ã¤Ã¥Ã±Ã©Ã³ Ã²Ã£ 10 Ã®Ã¹Ã¸Ã¥Ãº
 
 //int main(){
 //	struct Job arr[10];
@@ -20,12 +20,12 @@ typedef struct
 {
 	char name_of_job[N];
 	char name_of_company[N];
-	char field_of_work[N];//úçåí äîùøä
-	char location_area[N];//îé÷åí 
-	char scope_of_the_job[N];//äé÷ó äîùøä
-	char salary_range[N];//èååç äùëø ìùòä
-	//int code;//îñôø ñéãåøé ùì îùøä
-	//char job_requirements[N];//ãøéùåú äúô÷éã
+	char catagory_of_job[N];//ÃºÃ§Ã¥Ã­ Ã¤Ã®Ã¹Ã¸Ã¤
+	char location_area[N];//Ã®Ã©Ã·Ã¥Ã­ 
+	char scope_of_the_job[N];//Ã¤Ã©Ã·Ã³ Ã¤Ã®Ã¹Ã¸Ã¤
+	char salary_range[N];//Ã¨Ã¥Ã¥Ã§ Ã¤Ã¹Ã«Ã¸ Ã¬Ã¹Ã²Ã¤
+	//int code;//Ã®Ã±Ã´Ã¸ Ã±Ã©Ã£Ã¥Ã¸Ã© Ã¹Ã¬ Ã®Ã¹Ã¸Ã¤
+	//char job_requirements[N];//Ã£Ã¸Ã©Ã¹Ã¥Ãº Ã¤ÃºÃ´Ã·Ã©Ã£
 }Job;
 
 
@@ -37,8 +37,8 @@ void add_job(Job* job)
 	char name_of_company[N];
 	char location[5][N] = { "North", "South","West","East" };
 	char employment_catagory[5][N] = { "Education","Engineering","Medicene","Office" };
-	char scope_of_the_job[5][N] = { "Full time","Part time","Third job","Shifts" };//äé÷ó äîùøä
-	char salary_range[5][N]={ "Minimum wage","35 to 50 per hour","50 to 100 per hour", "100 or more per hour" };//èååç äùëø
+	char scope_of_the_job[5][N] = { "Full time","Part time","Third job","Shifts" };//Ã¤Ã©Ã·Ã³ Ã¤Ã®Ã¹Ã¸Ã¤
+	char salary_range[5][N]={ "Minimum wage","35 to 50 per hour","50 to 100 per hour", "100 or more per hour" };//Ã¨Ã¥Ã¥Ã§ Ã¤Ã¹Ã«Ã¸
 	//int cood;
 	int choose;
 
@@ -58,8 +58,8 @@ void add_job(Job* job)
 	do {
 		printf("Please Choose Employment Catagory:\n1.Education\n2.Engineering\n3.Medicne\n4.Office\n");
 		scanf_s("%d", &choose);
-		strcpy(job->field_of_work, employment_catagory[choose - 1]);
-		printf(job->field_of_work);//check=good
+		strcpy(job->catagory_of_job, employment_catagory[choose - 1]);
+		printf(job->catagory_of_job);//check=good
 
 	} while (choose > 4 || choose < 1);
 	
@@ -80,7 +80,7 @@ void add_job(Job* job)
 	} while (choose > 4 || choose < 1);
 	
 
-	//do//úçåí îùøä
+	//do//ÃºÃ§Ã¥Ã­ Ã®Ã¹Ã¸Ã¤
 	//{
 	//	printf("\n\nSelect the field of the work:\n1- Education\n2 - Engineering\n3 - Medicine\n4 - Office");
 	//	scanf_s("%d",&choice);
@@ -104,7 +104,7 @@ void add_job(Job* job)
 	//	}
 	//} while (choice > 4 || choice < 1);
 
-	//do//îé÷åí
+	//do//Ã®Ã©Ã·Ã¥Ã­
 	//{
 	//	printf("\n\nSelect the location area of the work:\n1-South\n2 - North\n3 - Center\n4 - Jerusalem and its environs");
 	//	scanf_s("%d", &choice);
@@ -128,7 +128,7 @@ void add_job(Job* job)
 	//	}
 	//} while (choice > 4 || choice < 1);
 
-	//do//äé÷ó îùøä
+	//do//Ã¤Ã©Ã·Ã³ Ã®Ã¹Ã¸Ã¤
 	//{
 	//	printf("\n\nSelect the scope of the job:\n1-Full time\n2-Part time\n3-Third job\n4 -Shifts");
 	//	scanf_s("%d", &choice);
@@ -153,7 +153,7 @@ void add_job(Job* job)
 	//	}
 	//} while (choice > 4 || choice < 1);
 
-	//do//èååç äùëø
+	//do//Ã¨Ã¥Ã¥Ã§ Ã¤Ã¹Ã«Ã¸
 	//{
 	//	printf("\n\nSelect the salary range of the job:\n1-Minimum wage\n2-35 to 50 per hour\n3-50 to 100 per hour\n4 -100 or more per hour");
 	//	scanf_s("%d", &choice);
