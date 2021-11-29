@@ -16,7 +16,7 @@ int main()
 	printf("thank you hashem!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1\n");
 	printf("Shavua tov!");
 	
-	
+	printf("somthing  good!\n");
 
 	
 
