@@ -3,15 +3,15 @@
 #define N 30
 
 //Employer** employers = NULL;
-void job_search()//Employer** employers,int num_of_employers)//τοπχφιδ μηηιτεω ξωψδ μτι ριπεο δξχαμϊ ξςψκ ωμ ξφαιςιν μξςριχιν εβεγμε
+void job_search()//Employer** employers,int num_of_employers)//Γ΄Γ―Γ°Γ·Γ¶Γ©Γ¤ Γ¬Γ§Γ§Γ©Γ΄Γ¥ΓΉ Γ®ΓΉΓΈΓ¤ Γ¬Γ΄Γ© Γ±Γ©Γ°Γ¥Γ― Γ¤Γ®Γ·Γ΅Γ¬ΓΊ Γ®Γ²ΓΈΓª ΓΉΓ¬ Γ®Γ¶Γ΅Γ©Γ²Γ©Γ­ Γ¬Γ®Γ²Γ±Γ©Γ·Γ©Γ­ Γ¥ΓΆΓ¥Γ£Γ¬Γ¥
 {
 	int choose, i, j , code_of_job;
 	char location[5][N] = { "North", "South","West","East","Unfiltered" };
 	char employment_catagory[5][N] = { "Education","Engineering","Medicene","Office","Unfiltered" };
-	char scope_of_job[5][N] = { "Full time","Part time","Third job","Shifts","Unfiltered" };//διχσ δξωψδ
-	char salary_range[5][N] = { "Minimum wage","35 to 50 per hour","50 to 100 per hour", "100 or more per hour","Unfiltered" };//θεεη δωλψ
+	char scope_of_job[5][N] = { "Full time","Part time","Third job","Shifts","Unfiltered" };//Γ¤Γ©Γ·Γ³ Γ¤Γ®ΓΉΓΈΓ¤
+	char salary_range[5][N] = { "Minimum wage","35 to 50 per hour","50 to 100 per hour", "100 or more per hour","Unfiltered" };//Γ¨Γ¥Γ¥Γ§ Γ¤ΓΉΓ«ΓΈ
 	
-	char temp_catagory[N], temp_area[N], temp_scope[N], temp_salary[N];//ϊηεν,ΰιζεψ,διχσ,ωλψ
+	char temp_catagory[N], temp_area[N], temp_scope[N], temp_salary[N];//ΓΊΓ§Γ¥Γ­,Γ Γ©Γ¦Γ¥ΓΈ,Γ¤Γ©Γ·Γ³,ΓΉΓ«ΓΈ
 	do {
 		printf("Please Choose the location area of the work:\n1.North\n2.South\n.3.West\n4.East\n5.Unfiltered");
 		scanf("%d", &choose);
@@ -40,7 +40,7 @@ void job_search()//Employer** employers,int num_of_employers)//τοπχφιδ μηηιτεω ξ
 		printf(temp_salary);//check=good
 	} while (choose > 5 || choose < 1);
 
-	//do//ϊηεν ξωψδ
+	//do//ΓΊΓ§Γ¥Γ­ Γ®ΓΉΓΈΓ¤
 	//{
 	//	printf("\n\nSelect the field of the work:\n1- Education\n2 - Engineering\n3 - Medicine\n4 - Office\n5-Unfiltered");
 	//	scanf_s("%d", &choice);
@@ -58,7 +58,7 @@ void job_search()//Employer** employers,int num_of_employers)//τοπχφιδ μηηιτεω ξ
 	//	case 4:
 	//		strcpy(temp_field, "Office");
 	//		break;
-	//	case 5://μμΰ ριπεο
+	//	case 5://Γ¬Γ¬Γ  Γ±Γ©Γ°Γ¥Γ―
 	//		strcpy(temp_field, "Unfiltered");
 	//		break;
 	//	default:
@@ -67,7 +67,7 @@ void job_search()//Employer** employers,int num_of_employers)//τοπχφιδ μηηιτεω ξ
 	//	}
 	//} while (choice > 5 || choice < 1);
 
-	//do//ξιχεν
+	//do//Γ®Γ©Γ·Γ¥Γ­
 	//{
 	//	printf("\n\nSelect the location area of the work:\n1-South\n2 - North\n3 - Center\n4 - Jerusalem and its environs\n5-Unfiltered");
 	//	scanf_s("%d", &choice);
@@ -85,7 +85,7 @@ void job_search()//Employer** employers,int num_of_employers)//τοπχφιδ μηηιτεω ξ
 	//	case 4:
 	//		strcpy(temp_area, "Jerusalem and its environs");
 	//		break;
-	//	case 5://μμΰ ριπεο
+	//	case 5://Γ¬Γ¬Γ  Γ±Γ©Γ°Γ¥Γ―
 	//		strcpy(temp_area, "Unfiltered");
 	//		break;
 	//	default:
@@ -94,7 +94,7 @@ void job_search()//Employer** employers,int num_of_employers)//τοπχφιδ μηηιτεω ξ
 	//	}
 	//} while (choice > 5 || choice < 1);
 
-	//do//διχσ ξωψδ
+	//do//Γ¤Γ©Γ·Γ³ Γ®ΓΉΓΈΓ¤
 	//{
 	//	printf("\n\nSelect the scope of the job:\n1-Full time\n2-Part time\n3-Third job\n4 -Shifts\n5-Unfiltered");
 	//	scanf_s("%d", &choice);
@@ -112,7 +112,7 @@ void job_search()//Employer** employers,int num_of_employers)//τοπχφιδ μηηιτεω ξ
 	//	case 4:
 	//		strcpy(temp_scope, "Shifts");
 	//		break;
-	//	case 5://μμΰ ριπεο
+	//	case 5://Γ¬Γ¬Γ  Γ±Γ©Γ°Γ¥Γ―
 	//		strcpy(temp_scope, "Unfiltered");
 	//		break;
 	//	default:
@@ -121,7 +121,7 @@ void job_search()//Employer** employers,int num_of_employers)//τοπχφιδ μηηιτεω ξ
 	//	}
 	//} while (choice > 5 || choice < 1);
 
-	//do//θεεη δωλψ
+	//do//Γ¨Γ¥Γ¥Γ§ Γ¤ΓΉΓ«ΓΈ
 	//{
 	//	printf("\n\nSelect the salary range of the job:\n1-Minimum wage\n2-35 to 50 per hour\n3-50 to 100 per hour\n4 -100 or more per hour\n5-Unfiltered");
 	//	scanf_s("%d", &choice);
@@ -139,7 +139,7 @@ void job_search()//Employer** employers,int num_of_employers)//τοπχφιδ μηηιτεω ξ
 	//	case 4:
 	//		strcpy(temp_salary, "100 or more per hour");
 	//		break;
-	//	case 5://μμΰ ριπεο
+	//	case 5://Γ¬Γ¬Γ  Γ±Γ©Γ°Γ¥Γ―
 	//		strcpy(temp_salary, "Unfiltered");
 	//		break;
 	//	default:
@@ -153,11 +153,11 @@ void job_search()//Employer** employers,int num_of_employers)//τοπχφιδ μηηιτεω ξ
 	printf("The jobs found are right for you:\n");
 	for (i = 0; i < num_of_employers; ++i)
 		for (j = 0; j < 10; ++j)
-			if (cmp(Employer[i]->arr_jobs[j]->field_of_work, temp_field) == 0 ||
-				cmp(Employer[i]->arr_jobs[j]->location_area, temp_area) == 0 ||
-				cmp(Employer[i]->arr_jobs[j]->scope_of_the_job, temp_scope) == 0 ||
+			if (cmp(Employer[i]->arr_jobs[j]->field_of_work, temp_field) == 0 &&
+				cmp(Employer[i]->arr_jobs[j]->location_area, temp_area) == 0 &&
+				cmp(Employer[i]->arr_jobs[j]->scope_of_the_job, temp_scope) == 0 &&
 				cmp(Employer[i]->arr_jobs[j]->salary_range, temp_salary) == 0)
-				fprintf()//μδλπιρ ΰϊ δξωψεϊ ωςμε αριπεο μϊεκ ξςψκ ηγω
+				fprintf()//Γ¬Γ¤Γ«Γ°Γ©Γ± Γ ΓΊ Γ¤Γ®ΓΉΓΈΓ¥ΓΊ ΓΉΓ²Γ¬Γ¥ Γ΅Γ±Γ©Γ°Γ¥Γ― Γ¬ΓΊΓ¥Γª Γ®Γ²ΓΈΓª Γ§Γ£ΓΉ
 				code_of_job = (i * 10 + j);
 
 
