@@ -1,5 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
+#include<string.h>
 #define N 30
 
 //Employer** employers = NULL;
@@ -153,7 +154,7 @@ void job_search()//Employer** employers,int num_of_employers)//ôïð÷öéä ì
 	printf("The jobs found are right for you:\n");
 	for (i = 0; i < num_of_employers; ++i)
 		for (j = 0; j < 10; ++j)
-			if (cmp(Employer[i]->arr_jobs[j]->field_of_work, temp_field) == 0 &&
+			if (cmp(Employer[i]->arr_jobs[j]->employment_catagory, temp_catagory) == 0 &&
 				cmp(Employer[i]->arr_jobs[j]->location_area, temp_area) == 0 &&
 				cmp(Employer[i]->arr_jobs[j]->scope_of_the_job, temp_scope) == 0 &&
 				cmp(Employer[i]->arr_jobs[j]->salary_range, temp_salary) == 0)
